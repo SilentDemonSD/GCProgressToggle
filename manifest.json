@@ -1,17 +1,24 @@
 {
-    "manifest_version": 3,
-    "name": "Arcade Points Calculator",
-    "version": "1.0",
-    "description": "A Chrome extension for calculating Arcade Points.",
-    "action": {
-        "default_popup": "popup.html",
-        "default_icon": {
-            "16": "images/icon16.png",
-            "48": "images/icon48.png",
-            "128": "images/icon128.png"
-        }
-    },
-    "permissions": [
-        "activeTab"
-    ]
+	"manifest_version": 3,
+	"name": "CloudSkillsBoost Progress Checker",
+	"version": "1.0",
+	"description": "Enables the check my progress button for CloudSkillsBoost Labs",
+	"permissions": [
+		"activeTab"
+	],
+	"content_scripts": [
+		{
+			"matches": [
+				"https://www.cloudskillsboost.google/games/*"
+			],
+			"js": [
+				"content.js"
+			]
+		}
+	],
+	"icons": {
+		"16": "icons/icon16.png",
+		"48": "icons/icon48.png",
+		"128": "icons/icon128.png"
+	}
 }
