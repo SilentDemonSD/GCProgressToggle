@@ -43,7 +43,7 @@ if (currentUrl.includes('/leaderboard')) {
             bottom: '20px',
             right: '20px',
             zIndex: '1000',
-            backgroundColor: '#1e88e5',
+            backgroundColor: '#f2ff00ff',
             padding: '10px',
             borderRadius: '50%',
             boxShadow: '0 4px 12px rgba(0,0,0,0.2)',
